@@ -5,6 +5,7 @@ import Stepper from './layouts/Stepper'
 
 function App() {
   const resources = <Resources/>
+
   return (
     <div className="App">
       <AppProvider>

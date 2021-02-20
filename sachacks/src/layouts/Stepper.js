@@ -21,9 +21,9 @@ import 'react-step-progress/dist/index.css';
 
 const Stepper = ({step1}) => {
     const step1Content = step1;
-    const step2Content = <h1>Step 2 Content</h1>;
-    const step3Content = <h1>Step 3 Content</h1>;
-    
+    const step2Content = step1;
+    const step3Content = step1;
+
     const [steps, setSteps] = useState([
         {
             label: 'Step 1',
@@ -47,12 +47,8 @@ const Stepper = ({step1}) => {
             }
     ])
 
-   
-     
-
-
     return(
-        <StepProgressBar
+        <StepProgressBar 
         startingStep={0}
         onSubmit={onFormSubmit}
         steps={steps}

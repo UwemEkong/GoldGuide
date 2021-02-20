@@ -6,7 +6,7 @@ import { resourceTypes } from './resourceTypes';
 const Resources = () => {
 
     return(
-        <div className="container-fluid">
+        <div className="pt-5 container-fluid">
             <h1>What resources are you looking for?</h1>
             <h5 className="helper-text">(click all that apply)</h5>
             <div className="container row col-lg-9 d-flex">
