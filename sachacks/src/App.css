@@ -65,3 +65,11 @@ h1 {
   justify-content: center;
   margin: auto;
 }
+
+.loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

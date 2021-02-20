@@ -1,26 +1,27 @@
 import React, {useState} from 'react';
 import StepProgressBar from 'react-step-progress';
 import 'react-step-progress/dist/index.css';
+import { Redirect } from 'react-router-dom';
  
     // setup step validators, will be called before proceeding to the next step
-    const step2Validator = () => {
-        // return a boolean
-      }
-       
-      const step3Validator = () => {
-        // return a boolean
-      }
-       
-      const onFormSubmit = () => {
-        // handle the submit logic here
-        // This function will be executed at the last step
-        // when the submit button (next button in the previous steps) is pressed
-      }
+ 
   
  
 
 const Stepper = ({ step1, step2, step3, step4 }) => {
+const step2Validator = () => {
+    return true
+    }
+    
+    const step3Validator = () => {
+    return true
+    }
+    
+    const onFormSubmit = () => {
+        setRedirect(true)
+    }
 
+    const [redirect, setRedirect] = useState(false)
     const [params, setParams] = useState({
         resourceTypes: [],
         ageRange: "",
@@ -64,13 +65,17 @@ const Stepper = ({ step1, step2, step3, step4 }) => {
     ])
 
     return(
-        <StepProgressBar 
-        startingStep={0}
-        onSubmit={onFormSubmit}
-        steps={steps}
-        primaryBtnClass="btn btn-primary"
-        secondaryBtnClass="btn btn-outline-secondary"
-        />
+        <>
+        {redirect ? <Redirect push to="/results"/> : 
+            <StepProgressBar 
+            startingStep={0}
+            onSubmit={onFormSubmit}
+            steps={steps}
+            primaryBtnClass="btn btn-primary"
+            secondaryBtnClass="btn btn-outline-secondary"
+            />
+        }
+        </>
     )
 }
 

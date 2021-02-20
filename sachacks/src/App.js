@@ -16,17 +16,16 @@ function App() {
         <Router>
         <div className="step-container">
           <Switch>
-
           <Route exact path="/">
             <Landing/>
           </Route>
           <Route exact path="/find-resources">
             <Stepper step1={resources}/>
           </Route>
-
+          <Route exact path="/results">
+            <Results/>
+          </Route>
           </Switch>
-
-
         </div>
         </Router>
       </AppProvider>
