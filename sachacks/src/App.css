@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap");
+.App {
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+}
 
 h1{
   color: #35383f;
@@ -18,10 +22,6 @@ h1{
   font-weight: 600;
 }
 
-.App {
-  font-family: "Poppins", sans-serif;
-  padding: 2rem;
-}
 
 
 .card {
@@ -65,3 +65,8 @@ h1{
   border: #3250fe;
 }
 
+.step-container{
+  max-width: 70%;
+  justify-content: center;
+  margin: auto;
+}

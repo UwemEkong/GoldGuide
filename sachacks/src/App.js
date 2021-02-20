@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <AppProvider>
-        <div className="container">
+        <div className="step-container">
           <Stepper step1={resources}/>
         </div>
       </AppProvider>
