@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap");
+
+.App {
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+}
+
+h1 {
+  color: #35383f;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.helper-text {
+  color: #35383f;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.card-title {
+  color: #35383f;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 10rem;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px rgb(188, 196, 204);
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1.5rem 2.5rem;
+  transition: 0.1s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: 0 6px 6px rgba(202, 202, 202, 0.2);
+}
+
+.card-focused {
+  border: solid 1px lightgray;
+  border: solid 2px #3250fe !important;
+  box-shadow: 1px 6px 6px rgba(202, 202, 202, 0.507) !important;
+  outline: none;
+}
+
+.card-img {
+  max-width: 8rem;
+  margin: 1rem;
+}
+
+.btn-primary {
+  background-color: #6e7183;
+  border: #6e7183;
+}
+
+.btn-primary:hover {
+  background-color: #3250fe;
+  border: #3250fe;
+}
+
+.step-container {
+  max-width: 70%;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.btn-pulse{
+  animation: pulse
+}
