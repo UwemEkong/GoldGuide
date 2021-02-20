@@ -1,14 +1,140 @@
-{
-    "name": "California Dept. of Health",
-    "service": "healthcare",
-    "isFamilyService": "false",
-    "isFemaleService": "false",
-    "isMaleService" : "false",
-    "ageGroup": "all", 
-    "isVeteranService": "false",
-    "isDisabilityService": "true",
-    "customerPrice": "50", 
-    "lat": 46.6,
-    "lng": 48.5
+{ 
+    "resourceList": [
+        {
+            "name": "California Dept. of Health",
+            "services": ["healthcare"],
+            "isFamilyService": "false",
+            "isFemaleService": "false",
+            "isMaleService" : "false",
+            "ageGroups": ["youth", "adult", "senior"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "true",
+            "customerPrice": "50", 
+            "latLng": {            
+                "lat": 46.6,
+                "lng": 48.5
+            }
 
+        }, 
+        {
+            "name": "Loaves & Fishes",
+            "services": ["support", "clothing", "housing", "nutrition"],
+            "isFamilyService": "false",
+            "isFemaleService": "false",
+            "isMaleService" : "false",
+            "ageGroups": ["adult"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "false",
+            "customerPrice": "0", 
+            "latLng": {            
+                "lat": 38.5913776787469,
+                "lng": -121.4821333
+            }
+        },
+        {
+            "name": "My Sister's House",
+            "services": ["housing"],
+            "isFamilyService": "false",
+            "isFemaleService": "true",
+            "isMaleService" : "false",
+            "ageGroups": ["adult", "youth"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "false",
+            "customerPrice": "0", 
+            "latLng": {            
+                "lat": 38.54924339444796, 
+                "lng": -121.48884771350276
+            }
+        },
+        {
+            "name": "Wellsprings Women’s Center",
+            "services": ["nutrition", "support", "education"],
+            "isFamilyService": "false",
+            "isFemaleService": "true",
+            "isMaleService" : "false",
+            "ageGroups": ["adult", "youth", "senior"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "false",
+            "customerPrice": "0", 
+            "latLng": {            
+                "lat": 38.55141258472948, 
+                "lng": -121.46970038465741
+            }
+        },
+        {
+            "name": "Salvation Army",
+            "services": ["nutrition", "support", "career", "clothing", "housing", "rehab"],
+            "isFamilyService": "false",
+            "isFemaleService": "false",
+            "isMaleService" : "false",
+            "ageGroups": ["adult", "youth", "senior"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "false",
+            "customerPrice": "0", 
+            "latLng": {            
+                "lat": 38.59075264586816, 
+                "lng": -121.48538607427203
+            }
+        },
+        {
+            "name": "Sobriety Brings Change",
+            "services": ["rehab", "support"],
+            "isFamilyService": "false",
+            "isFemaleService": "false",
+            "isMaleService" : "false",
+            "ageGroups": ["adult", "youth"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "false",
+            "customerPrice": "0", 
+            "latLng": {            
+                "lat": 38.51028429239638, 
+                "lng": -121.45174561568085
+            }
+        },
+        {
+            "name": "One Community Health",
+            "services": ["healthcare", "support"],
+            "isFamilyService": "false",
+            "isFemaleService": "false",
+            "isMaleService" : "false",
+            "ageGroups": ["adult", "youth"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "false",
+            "customerPrice": "0", 
+            "latLng": {            
+                "lat": 38.57135194346001, 
+                "lng": -121.4813687693148
+            }
+        },
+        {
+            "name": "Sol Collective",
+            "services": ["education", "support"],
+            "isFamilyService": "false",
+            "isFemaleService": "false",
+            "isMaleService" : "false",
+            "ageGroups": ["adult", "youth", "senior"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "false",
+            "customerPrice": "0", 
+            "latLng": {            
+                "lat": 38.55931970536573, 
+                "lng": -121.4863462693148
+            }
+        },
+        {
+            "name": "NorCal Resist",
+            "services": ["housing", "support", "nutrition"],
+            "isFamilyService": "false",
+            "isFemaleService": "false",
+            "isMaleService" : "false",
+            "ageGroups": ["adult", "youth", "senior"], 
+            "isVeteranService": "false",
+            "isDisabilityService": "false",
+            "customerPrice": "0", 
+            "latLng": {            
+                "lat": 38.559985674620165,
+                "lng": -121.48468393102195
+            }
+        }
+    ]
 }
