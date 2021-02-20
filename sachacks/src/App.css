@@ -37,6 +37,21 @@ h1 {
   transition: 0.1s;
 }
 
+.card-wide{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 20rem;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px rgb(188, 196, 204);
+  border-radius: 8px;
+  margin: 1rem;
+  margin-left: 0rem;
+  padding: 2rem;
+  transition: 0.1s;
+}
+
 .card:hover {
   cursor: pointer;
   transform: scale(1.01);
@@ -73,4 +88,12 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+
+.result-card-container{
+  overflow: auto;
+  border-bottom: solid 1px lightgray;
+  height: 80vh;
+  width: 100%;
 }
