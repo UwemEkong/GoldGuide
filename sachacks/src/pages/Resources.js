@@ -14,8 +14,6 @@ const Resources = () => {
                     return(<ResourceCard name={type.name} icon={type.icon}></ResourceCard>)
                 })}
             </div>
-            <button className="btn mx-2 btn-outline-secondary">Back</button>
-            <button className="btn mx-2 btn-info">Next</button>
         </div>
     )
 }
