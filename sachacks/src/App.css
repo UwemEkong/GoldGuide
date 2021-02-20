@@ -59,13 +59,17 @@ h1 {
   border: #6e7183;
 }
 
-.btn-primary:hover {
-  background-color: #3250fe;
-  border: #3250fe;
-}
 
 .step-container {
   max-width: 70%;
   justify-content: center;
+  margin: auto;
+}
+
+.loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 }
