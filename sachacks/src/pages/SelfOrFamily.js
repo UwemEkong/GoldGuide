@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
-import ResourceCard from '../components/ResourceCard'
+import IconCard from '../components/IconCard'
 import {familyStatus} from './FamilyStatus'
 
-const SelfOrFamily = (props) =>{
+const SelfOrFamily = () =>{
 
     const [selected, setSelected] = useState([])
 
@@ -23,7 +23,7 @@ const SelfOrFamily = (props) =>{
         <h3>Who do you need resources for?</h3>
         <div className="row d-flex justify-content-center">
         {familyStatus.map((type) => {
-        return ( <ResourceCard
+        return ( <IconCard
         name={type.name} 
         icon={type.icon} 
         value={type.value} 

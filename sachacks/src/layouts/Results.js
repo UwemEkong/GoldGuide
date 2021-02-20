@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import LoadingBars from '../assets/loading-bars.svg'
 
 const Results = () => {
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
     return(
         <>
         {isLoading ? <div className="loading">

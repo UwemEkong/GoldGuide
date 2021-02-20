@@ -31,7 +31,7 @@ const step2Validator = () => {
     })
 
     const step1Content = step1;
-    const step2Content = step1;
+    const step2Content = step2;
     const step3Content = step1;
 
     const [steps] = useState([
