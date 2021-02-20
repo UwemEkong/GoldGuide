@@ -1,0 +1,14 @@
+{
+    "name": "California Dept. of Health",
+    "service": "healthcare",
+    "isFamilyService": "false",
+    "isFemaleService": "false",
+    "isMaleService" : "false",
+    "ageGroup": "all", 
+    "isVeteranService": "false",
+    "isDisabilityService": "true",
+    "customerPrice": "50", 
+    "lat": 46.6,
+    "lng": 48.5
+
+}
