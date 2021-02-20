@@ -1,7 +1,8 @@
 import './App.css';
 import Resources from './pages/Resources';
 import { AppProvider } from '@shopify/polaris';
-import Stepper from './layouts/Stepper'
+import Stepper from './layouts/Stepper';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const resources = <Resources/>

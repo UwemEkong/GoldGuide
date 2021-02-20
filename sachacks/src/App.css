@@ -1,28 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap");
+
 .App {
   font-family: "Poppins", sans-serif;
   padding: 2rem;
 }
 
-h1{
+h1 {
   color: #35383f;
   font-weight: 600;
   font-size: 1.7rem;
 }
 
-.helper-text{
+.helper-text {
   color: #35383f;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
-.h5 {
+.card-title {
   color: #35383f;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
-
-
 
 .card {
   display: flex;
@@ -43,9 +42,10 @@ h1{
   box-shadow: 0 6px 6px rgba(202, 202, 202, 0.2);
 }
 
-.card:focus {
+.card-focused {
   border: solid 1px lightgray;
-  border: solid 2px #3250fe;
+  border: solid 2px #3250fe !important;
+  box-shadow: 1px 6px 6px rgba(202, 202, 202, 0.507) !important;
   outline: none;
 }
 
@@ -54,18 +54,17 @@ h1{
   margin: 1rem;
 }
 
-
-.btn-primary{
-  background-color: #6E7183;
-  border:#6E7183;
+.btn-primary {
+  background-color: #6e7183;
+  border: #6e7183;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: #3250fe;
   border: #3250fe;
 }
 
-.step-container{
+.step-container {
   max-width: 70%;
   justify-content: center;
   margin: auto;

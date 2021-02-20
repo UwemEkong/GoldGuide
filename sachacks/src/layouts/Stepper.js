@@ -19,32 +19,39 @@ import 'react-step-progress/dist/index.css';
   
  
 
-const Stepper = ({step1}) => {
+const Stepper = ({ step1, step2, step3, step4 }) => {
     const step1Content = step1;
     const step2Content = step1;
     const step3Content = step1;
 
-    const [steps, setSteps] = useState([
+    const [steps] = useState([
         {
             label: 'Step 1',
             subtitle: '10%',
             name: 'step 1',
             content: step1Content
-            },
-            {
+        },
+        {
             label: 'Step 2',
             subtitle: '50%',
             name: 'step 2',
             content: step2Content,
             validator: step2Validator
-            },
-            {
+        },
+        {
             label: 'Step 3',
             subtitle: '100%',
             name: 'step 3',
             content: step3Content,
             validator: step3Validator
-            }
+        },
+        {
+            label: 'Step 4',
+            subtitle: '100%',
+            name: 'step 4',
+            content: step3Content,
+            validator: step3Validator
+        }
     ])
 
     return(
@@ -52,6 +59,8 @@ const Stepper = ({step1}) => {
         startingStep={0}
         onSubmit={onFormSubmit}
         steps={steps}
+        primaryBtnClass="btn btn-primary"
+        secondaryBtnClass="btn btn-outline-secondary"
         />
     )
 }

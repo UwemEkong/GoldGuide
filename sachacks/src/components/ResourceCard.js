@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const ResourceCard = ({ name, icon, value, onSelect }) => {
-    
+const ResourceCard = ({ name, icon, value, onSelect, forwardRef }) => {
+    const [isSelected, setIsSelected] = useState(false)
+
+    const handleClick = () => {
+        console.log(isSelected)
+        isSelected ? setIsSelected(false) : setIsSelected(true);
+        onSelect(value)
+    }
 
     return(
-        <div className="card" onClick={() => onSelect(value)}>
+        <div className={isSelected ? "card-focused card" : "card"} id={value} onClick={handleClick}>
             <img className="card-img" src={icon} alt={`${name}-icon`}/>
-            <h5 className="h5">{name}</h5>
+            <span className="card-title">{name}</span>
         </div>
     )
 }
