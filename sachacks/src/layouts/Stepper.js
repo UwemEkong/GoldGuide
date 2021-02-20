@@ -20,6 +20,15 @@ import 'react-step-progress/dist/index.css';
  
 
 const Stepper = ({ step1, step2, step3, step4 }) => {
+
+    const [params, setParams] = useState({
+        resourceTypes: [],
+        ageRange: "",
+        isFemale: false,
+        isVeteran: false,
+        isDisabled: false
+    })
+
     const step1Content = step1;
     const step2Content = step1;
     const step3Content = step1;
