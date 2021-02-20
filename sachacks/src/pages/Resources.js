@@ -6,11 +6,16 @@ import { resourceTypes } from './resourceTypes';
 const Resources = () => {
 
     return(
-        <div>
-            <h1>What resources do you need?</h1>
-            {resourceTypes.map((type) => {
-                return(<ResourceCard name={type.name} icon={type.icon}></ResourceCard>)
-            })}
+        <div className="container-fluid">
+            <h1>What resources are you looking for?</h1>
+            <h5 className="helper-text">(click all that apply)</h5>
+            <div className="container row col-lg-9 d-flex">
+                {resourceTypes.map((type) => {
+                    return(<ResourceCard name={type.name} icon={type.icon}></ResourceCard>)
+                })}
+            </div>
+            <button className="btn mx-2 btn-outline-secondary">Back</button>
+            <button className="btn mx-2 btn-info">Next</button>
         </div>
     )
 }

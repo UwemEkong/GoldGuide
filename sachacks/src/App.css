@@ -1,4 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;900&display=swap");
+
+h1{
+  color: #35383f;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.helper-text{
+  color: #35383f;
+  font-size: .8rem;
+  font-weight: 500;
+}
 
 .h5 {
   color: #35383f;
@@ -11,29 +23,44 @@
   padding: 2rem;
 }
 
+
 .card {
   display: flex;
   flex-direction: column;
   max-width: 10rem;
   justify-content: center;
   align-items: center;
-  border: solid 1px lightslategrey;
-  border-radius: 5px;
+  border: solid 1px rgb(188, 196, 204);
+  border-radius: 8px;
   margin: 1rem;
-  padding: 2rem 0.5rem 0rem 0.5rem;
-  transition: 0.1s ease-in-out;
+  padding: 1.5rem 2.5rem;
+  transition: 0.1s;
 }
 
 .card:hover {
   cursor: pointer;
   transform: scale(1.01);
+  box-shadow: 0 6px 6px rgba(202, 202, 202, 0.2);
 }
 
 .card:focus {
   border: solid 1px lightgray;
+  border: solid 2px #3250fe;
   outline: none;
 }
 
 .card-img {
-  max-width: 7rem;
+  max-width: 8rem;
+  margin: 1rem;
+}
+
+
+.btn-primary{
+  background-color: #6E7183;
+  border:#6E7183;
+}
+
+.btn-primary:hover{
+  background-color: #3250fe;
+  border: #3250fe;
 }
