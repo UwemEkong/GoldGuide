@@ -6,9 +6,11 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Results from './layouts/Results';
 import Landing from './pages/Landing';
+import SelfOrFamily from './pages/SelfOrFamily';
 
 function App() {
   const resources = <Resources/>
+  const selforfamily = <SelfOrFamily/>
 
   return (
     <div className="App">
@@ -20,7 +22,7 @@ function App() {
             <Landing/>
           </Route>
           <Route exact path="/find-resources">
-            <Stepper step1={resources}/>
+            <Stepper step1={selforfamily} step2={resources}/>
           </Route>
           <Route exact path="/results">
             <Results/>
