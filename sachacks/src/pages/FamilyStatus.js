@@ -9,7 +9,7 @@ export const familyStatus = [
         icon: family
     },
     {
-        name: 'Single',
+        name: 'Just Myself',
         value: 'single',
         icon: single
     },    
