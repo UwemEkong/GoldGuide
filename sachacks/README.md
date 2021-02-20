@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Welcome to Gold Guide, your one-stop shop for Sacramento's resources.
 
 ## Available Scripts
 
