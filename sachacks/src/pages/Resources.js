@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import ResourceCard from '../components/ResourceCard'
+import IconCard from '../components/IconCard'
 import { resourceTypes } from './resourceTypes';
 
 
@@ -27,7 +27,7 @@ const Resources = () => {
             <div className="row d-flex justify-content-center">
                 {resourceTypes.map((type) => {
                     return(
-                        <ResourceCard 
+                        <IconCard 
                         name={type.name} 
                         icon={type.icon} 
                         value={type.value} 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ResourceCard = ({ name, icon, value, onSelect, forwardRef }) => {
+const IconCard = ({ name, icon, value, onSelect }) => {
     const [isSelected, setIsSelected] = useState(false)
 
     const handleClick = () => {
@@ -17,4 +17,4 @@ const ResourceCard = ({ name, icon, value, onSelect, forwardRef }) => {
     )
 }
 
-export default ResourceCard;
+export default IconCard;
