@@ -7,11 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Results from './layouts/Results';
 import Landing from './pages/Landing';
 import SelfOrFamily from './pages/SelfOrFamily';
+import AboutSelf from './pages/AboutSelf';
+import MoreAboutSelf from './pages/MoreAboutSelf';
 
 function App() {
   const resources = <Resources/>
   const selforfamily = <SelfOrFamily/>
-
+  const aboutself = <AboutSelf/>
+  const moreaboutself = <MoreAboutSelf/>
   return (
     <div className="App">
       <AppProvider>
@@ -26,6 +29,12 @@ function App() {
           </Route>
           <Route exact path="/results">
             <Results/>
+          </Route>
+          <Route exact path="/about-you">
+          <Stepper step1={aboutself}/>
+          </Route>
+          <Route exact path="/more-about-you">
+          <Stepper step1={moreaboutself}/>
           </Route>
           </Switch>
         </div>
