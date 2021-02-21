@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import aboutyou from '../assets/about-you.svg';
 import { Link } from 'react-router-dom';
 import { ButtonGroup, Button, Dropdown } from "react-bootstrap";
-const AboutSelf = (props) => {
+
+
+const AboutSelf = ({onSelect, value}) => {
+
+    const [isSelected, setIsSelected] = useState(false)
+
+    const handleClick = () => {
+        console.log(isSelected)
+        isSelected ? setIsSelected(false) : setIsSelected(true);
+        onSelect(value)
+    }
+
     return (
         <div class="container">
             <div class="row mx-auto my-auto">
@@ -12,7 +23,7 @@ const AboutSelf = (props) => {
                     <h5 style={{marginTop:"5%"}}> Which Gender Do You Most Identify With?</h5>
 
                     <div class="btn-group">
-                        <button>Male</button>
+                        <button >Male</button>
                         <button>Female</button>
                         <button>Non Binary</button>
                     </div>
