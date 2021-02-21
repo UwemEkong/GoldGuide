@@ -1,6 +1,8 @@
 import React from 'react';
+import housing from '../assets/building-map.svg';
 
 const ResultCard = ({ name, services }) => {
+   
     
     // const handleClick = () => {
     //     console.log(isSelected)
@@ -11,7 +13,10 @@ const ResultCard = ({ name, services }) => {
     return(
         <div className="card card-wide col-lg-12">
             <span className="card-title">{name}</span>
-            {services.map((service) => <span className="badge">{service}</span>)}
+            {services.map((service) => 
+               
+                <span className={`badge-${service}`}>{service}</span>
+            )}
         </div>
     )
 }

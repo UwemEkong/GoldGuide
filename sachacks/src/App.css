@@ -100,7 +100,7 @@ h1 {
 
 .btn-group button {
   background-color:#FFF; /* Green background */
-  border: 1px solid black; /* Green border */
+  border: 2px solid black; /* Green border */
   border-radius: 10px;
   color: black; /* White text */
   padding: 10px 24px; /* Some padding */
@@ -120,7 +120,7 @@ h1 {
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color: lightgray;
+  border: 2px solid blue
 }
 
 .dropbtn {
@@ -166,4 +166,92 @@ h1 {
 
 .tooltip {
   width: 500px;
+}
+
+.badge-healthcare {
+  background-color:#C50000; /* Green background */
+  border: 1px solid black; /* Green border */
+  border-radius: 10px;
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  padding: 2px;
+  margin: 5px;
+}
+
+.badge-nutrition {
+  background-color:#35C33F; /* Green background */
+  border: 1px solid black; /* Green border */
+  border-radius: 10px;
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  padding: 2px;
+  margin: 5px;
+}
+
+.badge-support {
+  background-color:#E35200; /* Green background */
+  border: 1px solid black; /* Green border */
+  border-radius: 10px;
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  padding: 2px;
+  margin: 5px;
+}
+
+.badge-clothing {
+  background-color:#B600E3; /* Green background */
+  border: 1px solid black; /* Green border */
+  border-radius: 10px;
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  padding: 2px;
+  margin: 5px;
+}
+
+.badge-housing {
+  background-color:#4EB3D0; /* Green background */
+  border: 1px solid black; /* Green border */
+  border-radius: 10px;
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  padding: 2px;
+  margin: 5px;
+}
+
+.badge-education {
+  background-color:#02618C; /* Green background */
+  border: 1px solid black; /* Green border */
+  border-radius: 10px;
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  padding: 2px;
+  margin: 5px;
+}
+
+.badge-career {
+  background-color:#F32F8D; /* Green background */
+  border: 1px solid black; /* Green border */
+  border-radius: 10px;
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  padding: 2px;
+  margin: 5px;
+}
+
+.badge-rehab {
+  background-color:gold; /* Green background */
+  border: 1px solid black; /* Green border */
+  border-radius: 10px;
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  padding: 2px;
+  margin: 5px;
 }

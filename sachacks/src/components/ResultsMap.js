@@ -10,12 +10,13 @@ const ResultsMap = withScriptjs(withGoogleMap((props) =>{
   const markers= resourcesJSON.map(resource => <ResourceMarker
     key={resource.name}
     location = {{lat: resource.latLng.lat, lng:resource.latLng.lng }}
+    services = {resource.services}
   />)
 
  
   return (
       <GoogleMap
-        defaultZoom={12}
+        defaultZoom={14}
         center={ { lat:  38.5913776787469, lng: -121.4821333 } }
         >
         {markers}
