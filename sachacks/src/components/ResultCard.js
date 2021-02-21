@@ -15,7 +15,7 @@ const ResultCard = ({ name, services }) => {
             <span className="card-title">{name}</span>
             {services.map((service) => 
                
-                <span className={`badge-${service}`}>{service}</span>
+                <span className={`badge badge-${service}`}>{service}</span>
             )}
         </div>
     )

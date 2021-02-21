@@ -37,7 +37,7 @@ h1 {
   transition: 0.1s;
 }
 
-.card-wide{
+.card-wide {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -75,14 +75,13 @@ h1 {
   border: #6e7183;
 }
 
-
 .step-container {
   max-width: 70%;
   justify-content: center;
   margin: auto;
 }
 
-.loading{
+.loading {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,16 +89,25 @@ h1 {
   margin: auto;
 }
 
-
-.result-card-container{
-  overflow: auto;
-  border-bottom: solid 1px lightgray;
+.result-card-container {
+  overflow: scroll;
+  border: solid 1px lightgray;
+  background-color: #f1f1f1;
+  border-radius: 8px;
   height: 80vh;
   width: 100%;
 }
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
 
 .btn-group button {
-  background-color:#FFF; /* Green background */
+  background-color: #fff; /* Green background */
   border: 2px solid black; /* Green border */
   border-radius: 10px;
   color: black; /* White text */
@@ -108,8 +116,6 @@ h1 {
   float: left; /* Float the buttons side by side */
   margin: 5px;
 }
-
-
 
 /* Clear floats (clearfix hack) */
 .btn-group:after {
@@ -120,11 +126,11 @@ h1 {
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  border: 2px solid blue
+  border: 2px solid blue;
 }
 
 .dropbtn {
-  background-color: #FFF;
+  background-color: #fff;
   color: black;
   padding: 16px;
   font-size: 16px;
@@ -143,7 +149,7 @@ h1 {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -154,7 +160,9 @@ h1 {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -169,7 +177,7 @@ h1 {
 }
 
 .badge-healthcare {
-  background-color:#C50000; /* Green background */
+  background-color: #c50000; /* Green background */
   border: 1px solid black; /* Green border */
   border-radius: 10px;
   color: white; /* White text */
@@ -180,78 +188,72 @@ h1 {
 }
 
 .badge-nutrition {
-  background-color:#35C33F; /* Green background */
+  background-color: #35c33f; /* Green background */
   border: 1px solid black; /* Green border */
   border-radius: 10px;
   color: white; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  padding: 2px;
-  margin: 5px;
 }
 
 .badge-support {
-  background-color:#E35200; /* Green background */
+  background-color: #e35200; /* Green background */
   border: 1px solid black; /* Green border */
   border-radius: 10px;
   color: white; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  padding: 2px;
-  margin: 5px;
 }
 
 .badge-clothing {
-  background-color:#B600E3; /* Green background */
+  background-color: #b600e3; /* Green background */
   border: 1px solid black; /* Green border */
   border-radius: 10px;
   color: white; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  padding: 2px;
-  margin: 5px;
 }
 
 .badge-housing {
-  background-color:#4EB3D0; /* Green background */
+  background-color: #4eb3d0; /* Green background */
   border: 1px solid black; /* Green border */
   border-radius: 10px;
   color: white; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  padding: 2px;
-  margin: 5px;
 }
 
 .badge-education {
-  background-color:#02618C; /* Green background */
+  background-color: #02618c; /* Green background */
   border: 1px solid black; /* Green border */
   border-radius: 10px;
   color: white; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  padding: 2px;
-  margin: 5px;
 }
 
 .badge-career {
-  background-color:#F32F8D; /* Green background */
+  background-color: #f32f8d; /* Green background */
   border: 1px solid black; /* Green border */
   border-radius: 10px;
   color: white; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  padding: 2px;
-  margin: 5px;
 }
 
 .badge-rehab {
-  background-color:gold; /* Green background */
+  background-color: gold; /* Green background */
   border: 1px solid black; /* Green border */
   border-radius: 10px;
   color: white; /* White text */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
-  padding: 2px;
-  margin: 5px;
+}
+
+.badge {
+  padding: 0.25rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin: 0.25rem;
 }
