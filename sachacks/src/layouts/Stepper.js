@@ -2,11 +2,7 @@ import React, {useState} from 'react';
 import StepProgressBar from 'react-step-progress';
 import 'react-step-progress/dist/index.css';
 import { Redirect } from 'react-router-dom';
- 
-    // setup step validators, will be called before proceeding to the next step
- 
-  
- 
+
 
 const Stepper = ({ step1, step2, step3, step4 }) => {
 const step2Validator = () => {
@@ -32,7 +28,8 @@ const step2Validator = () => {
 
     const step1Content = step1;
     const step2Content = step2;
-    const step3Content = step1;
+    const step3Content = step3;
+    const step4Content = step4;
 
     const [steps] = useState([
         {
@@ -59,7 +56,7 @@ const step2Validator = () => {
             label: 'Step 4',
             subtitle: '100%',
             name: 'step 4',
-            content: step3Content,
+            content: step4Content,
             validator: step3Validator
         }
     ])

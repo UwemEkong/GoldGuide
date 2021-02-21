@@ -25,16 +25,10 @@ function App() {
             <Landing/>
           </Route>
           <Route exact path="/find-resources">
-            <Stepper step1={selforfamily} step2={resources}/>
+            <Stepper step1={selforfamily} step2={resources} step3={aboutself} step4={moreaboutself}/>
           </Route>
           <Route exact path="/results">
             <Results/>
-          </Route>
-          <Route exact path="/about-you">
-          <Stepper step1={aboutself}/>
-          </Route>
-          <Route exact path="/more-about-you">
-          <Stepper step1={moreaboutself}/>
           </Route>
           </Switch>
         </div>
