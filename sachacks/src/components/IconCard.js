@@ -11,8 +11,13 @@ const IconCard = ({ name, icon, value, onSelect }) => {
 
     return(
         <div className={isSelected ? "card-focused card" : "card"} id={value} onClick={handleClick}>
-            <img className="card-img" src={icon} alt={`${name}-icon`}/>
+            {icon ? 
+            <>
+            <img className="card-img" src={icon} alt={`${name}-icon`}/> 
             <span className="card-title">{name}</span>
+            </>
+            : <span className="card-title mb-0">{name}</span>}
+  
         </div>
     )
 }
