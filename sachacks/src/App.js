@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <AppProvider>
-        <Router>
+        <Router basename={window.location.pathname || ''}>
         <div className="step-container">
           <Switch>
           <Route exact path="/">
